@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #e9b62b;
+  --secondary-color: #333;
+  --light-color: #f4f4f4;
+}
+
+body {
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+
+input[type="submit"] {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+}
+
+input {
+  color: var(--secondary-color);
+  caret-color: var(--secondary-color);
+}
+
+.success, .error {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  margin: 5px 0 15px 0;
+  border-radius: 2px;
+}
+
+.success {
+  background: #21af40;
+}
+
+.error {
+  background: #af2121;
+}
